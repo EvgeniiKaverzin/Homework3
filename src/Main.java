@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+
         // Задача 1
         System.out.println("Задача 1");
         int applesCount = 5;
@@ -59,5 +60,60 @@ public class Main {
         int totalBrownCans = totalClasses * brownCansPeeClass;
         System.out.println("В школе, где " + totalClasses + " классов, нужно " + totalWhiteCans + "  банок белой краски и " + totalBrownCans + " банок коричневой краски");
 
+        //Задача 6
+        System.out.println("Задача 6");
+        short totalBananas = 5;
+        short bananasMass1 = 80;
+        float totalBananasMassGr = totalBananas*bananasMass1;
+
+        short totalMilk = 2;
+        short milkMass1 = 105;
+        float totalMilkMassGr = totalMilk * milkMass1;
+
+        short totalIcecream = 2;
+        short icecreamMass1 = 100;
+        float totalIcecreamMassGr = totalIcecream* icecreamMass1;
+
+        short totalEggs = 4;
+        short eggMass1 = 70;
+        float totalEggsMassGr = totalEggs*eggMass1;
+
+        //Задача 7
+        System.out.println("Задача 7");
+        double needQuitGr = 7000;
+        double quit250Gr = 250;
+        double quit500Gr = 500;
+        int needDays250 = (int) (needQuitGr/quit250Gr);
+        System.out.println("если сбрасывать по 250гр в день то всего 7 кг можно сбросить за:"+ needDays250);
+        int needDays500 = (int) (needQuitGr/quit500Gr);
+        System.out.println("если сбрасывать по 500гр в день то всего 7 кг можно сбросить за:"+ needDays500);
+        int sredDays = (needDays250+needDays500)/2;
+        System.out.println("в среднем понадобиться "+ sredDays);
+
+
+        //Задача 8
+        System.out.println("Задача 8");
+        float pastSolaryMashaMonth = 67760;
+        float pastSolaryMashaYear = pastSolaryMashaMonth*12;
+        float newSolaryMashaMonth = (float) (pastSolaryMashaMonth*1.1);
+        float differenceMasha = newSolaryMashaMonth*12 - pastSolaryMashaYear;
+        System.out.println("Маша теперь получает "+newSolaryMashaMonth+" рублей. Годовой доход вырос на "+differenceMasha+" рублей");
+
+        float pastSolaryDenysMonth = 83690;
+        float pastSolaryDenysYear = pastSolaryDenysMonth*12;
+        float newSolaryDenysMonth = (float) (pastSolaryDenysMonth*1.1);
+        float differenceDenys = newSolaryDenysMonth*12- pastSolaryDenysYear;
+        System.out.println("Денис теперь получает "+newSolaryDenysMonth+" рублей. Годовой доход вырос на "+differenceDenys+" рублей");
+
+        float pastSolaryKristinaMonth = 76230;
+        float pastSolaryKristinaYear = pastSolaryKristinaMonth*12;
+        float newSolaryKristinaMonth = (float) (pastSolaryKristinaMonth*1.1);
+        float differenceKristina = newSolaryKristinaMonth*12- pastSolaryKristinaYear;
+        System.out.println("Кристина теперь получает "+newSolaryKristinaMonth+" рублей. Годовой доход вырос на "+differenceKristina+" рублей");
+
+        float totalBreakfastMassKg =
+                (totalEggsMassGr*totalBananasMassGr*totalIcecreamMassGr*totalMilkMassGr)/1000;
+        System.out.println("вес всего спортивного завтрака в киллограмах: "+ totalBreakfastMassKg);
+        System.out.println();
     }
 }
